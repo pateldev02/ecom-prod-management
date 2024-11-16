@@ -1,0 +1,59 @@
+Categories: [{"name": "Luxury Cars"},
+            {"name": "SUVs"},
+            {"name": "Electric Vehicles"},
+            {"name": "Sports Cars"}]
+
+Products(Bulk insert): [{"name": "Tesla Model S",
+                               "description": "Electric sedan with autopilot feature",
+                               "price": 79999.99,
+                               "categoryId": 2},
+                           {"name": "Ferrari F8",
+                               "description": "Luxury sports car with high performance",
+                               "price": 270000.00,
+                               "categoryId": 1},
+                           {"name": "Porsche 911",
+                               "description": "Iconic sports car with exceptional handling",
+                               "price": 150000.00,
+                               "categoryId": 1}]
+
+Customers: {"name": "Dev Patel", "email": "dev.patel@example.com"}
+           {"name": "Darshan Patel", "email": "dar.pat@example.com"}
+           {"name": "Prayag Dave", "email": "pr.dav@example.com"}
+           {"name": "Yaavi Bhatt", "email": "yaavi.cr@example.com"}
+
+Orders: {"customerId": 1, "totalAmount": 79999.99}
+            {"customerId": 2, "totalAmount": 270000.00}
+            {"customerId": 3, "totalAmount": 150000.00}
+            {"customerId": 4, "totalAmount": 150000.00}
+
+OrderItems: {"orderId": 1, "productId": 1, "quantity": 1, "unitPrice": 79999.99}
+                {"orderId": 2, "productId": 2, "quantity": 1, "unitPrice": 270000.00}
+                {"orderId": 3, "productId": 3, "quantity": 1, "unitPrice": 150000.00}
+                {"orderId": 4, "productId": 3, "quantity": 1, "unitPrice": 150000.00}
+
+
+Test:
+
+/categories POST(Array) DONE
+/categories GET DONE
+/categories/{id} PUT DONE
+
+/products POST(Array) DONE
+/products GET DONE
+/products/{id} GET DONE
+/products?categoryId={id} GET DONE
+/products/{id} PUT DONE
+/products/{id} DELETE DONE
+
+/customers POST DONE
+/customers GET DONE
+/customers/{id} GET DONE
+/customers/{id} PUT DONE
+/customers/{id} DELETE DONE
+
+/orders POST DONE
+
+/orderitems/{id} POST DONE
+/orderitems/order/{id} GET DONE
+/orderitems/{id} PUT DONE
+/orderitems/{id} DELETE DONE
